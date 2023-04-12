@@ -457,6 +457,7 @@ a:hover {
   }
   .product-hero {
     width: 100%;
+    border-radius: 1.5em;
   }
   .previous,
   .next {
@@ -504,6 +505,16 @@ a:hover {
     align-items: flex-start;
     margin-top: 1em;
     gap: 0.2em;
+  }
+  .price {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .discount {
+    font-size: 1rem;
+  }
+  .old-price {
+    font-size: 1rem;
   }
   .count-btn-group {
     display: flex;
