@@ -144,7 +144,7 @@ a:hover {
   background-color: var(--White);
   border-radius: 1em;
   box-shadow: 0 1em 1em 1em rgba(0, 0, 0, 0.1), 0 1em 2em 1em rgba(0, 0, 0, 0.1);
-  padding: 2em 4em 3em;
+  padding: 1.5em 0;
 }
 .cart-header {
   border-bottom: 1px solid var(--Grayish-blue);
@@ -171,6 +171,10 @@ a:hover {
   display: flex;
   gap: 0.5em;
 }
+.price {
+  font-size: 1rem;
+  font-weight: 700;
+}
 .total-amount {
   font-weight: 700;
   font-size: 1.05rem;
@@ -196,7 +200,7 @@ a:hover {
   text-align: center;
   font-size: 1.3rem;
   font-weight: 700;
-  padding: 1em;
+  padding: 0.5em;
   margin: 1.5em;
   border-radius: 1em;
   cursor: pointer;
@@ -314,12 +318,12 @@ a:hover {
   align-items: center;
   justify-content: flex-start;
 }
-.price {
-  font-size: 2rem;
+.price-p {
+  font-size: 1.5rem;
   font-weight: 700;
 }
 .discount {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--Orange);
   background-color: var(--Pale-orange);
@@ -328,7 +332,7 @@ a:hover {
   border-radius: 0.5em;
 }
 .old-price {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: var(--Grayish-blue);
   text-decoration: line-through;
@@ -338,7 +342,7 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   background-color: var(--Light-grayish-blue);
-  padding: 1.2em 2.4em;
+  padding: 0.5em;
   margin-top: 2em;
   border-radius: 1em;
 }
@@ -372,7 +376,7 @@ a:hover {
   font-size: 1.55rem;
   font-weight: 700;
   border-radius: 0.5em;
-  padding: 0.7em;
+  padding: 0.5em;
   box-shadow: 0px 20px 30px 0px var(--pale-orange);
   cursor: pointer;
 }
