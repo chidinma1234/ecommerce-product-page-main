@@ -119,6 +119,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   position: relative;
+  cursor: pointer;
 }
 .cart-count {
   position: absolute;
@@ -438,7 +439,7 @@ a:hover {
     width: 35%;
   }
   .cart {
-    width: 30%;
+    width: 40%;
     right: 1em;
     top: 5em;
   }
