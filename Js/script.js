@@ -23,11 +23,11 @@ const productInShoppingCart = document.querySelector('.products-in-cart');
 const msgEmpty = document.querySelector('.msg-empty');
 const checkout = document.querySelector('.checkout');
 
-const overlay = document.querySelector('.overlay');
-const lightbox = document.querySelector('.lightBox');
+// const overlay = document.querySelector('.overlay');
+// const lightbox = document.querySelector('.lightBox');
 
-let lightboxGallery;
-let lightboxHero;
+// let lightboxGallery;
+// let lightboxHero;
 
 // Numerical Variables
 let productCounterValue = 1;
@@ -62,16 +62,6 @@ const onThumbClick = (e) => {
   //update hero image
   heroImg.src = e.target.src.replace('-thumbnail', '');
 };
-//function to display the image
-const setHeroImage = (imageIndex) => {
-  heroImg.src = `./images/image-product-${imageIndex}.jpg`;
-  //images are not sync
-  gallery.forEach((img) => {
-    img.classList.remove('active');
-  });
-  //set active thumbnail
-  gallery[imageIndex - 1].classList.add('active');
-};
 //function to get the current num of the img
 const getCurrentImageIndex = () => {
   const imageIndex = parseInt(
@@ -84,6 +74,16 @@ const getCurrentImageIndex = () => {
       .replace('image-product-', '')
   );
   return imageIndex;
+};
+//function to display the image
+const setHeroImage = (imageIndex) => {
+  heroImg.src = `./images/image-product-${imageIndex}.jpg`;
+  //images are not sync
+  gallery.forEach((img) => {
+    img.classList.remove('active');
+  });
+  //set active thumbnail
+  gallery[imageIndex - 1].classList.add('active');
 };
 
 const handleBtnClickNext = () => {
@@ -291,4 +291,4 @@ btnPrevious.addEventListener('click', handleBtnClickPrevious);
 
 btnAddToCard.addEventListener('click', addToCart);
 
-heroImg.addEventListener('click', onHeroImgClick);
+// heroImg.addEventListener('click', onHeroImgClick);
